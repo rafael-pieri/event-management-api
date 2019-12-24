@@ -1,0 +1,16 @@
+spring.datasource:
+  name: event-management
+  url: jdbc:mysql://localhost:3306/event_management
+  username: root
+  password: root
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+server:
+  context-path: /
+
+spring:
+  data:
+    rest:
+      default-page-size: 5
