@@ -4,7 +4,7 @@
 It is an application for event management.
 
 ### ERD
-![alt text](https://github.com/rafael-pieri/event-management-api/erd.png)
+![alt text](https://github.com/rafael-pieri/event-management-api/blob/master/erd.png)
 
 ### Concepts
 - Hypermedia (HAL implementation)
