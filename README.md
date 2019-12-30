@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rafael-pieri/event-management-api.svg?branch=master)](https://travis-ci.com/rafael-pieri/event-management-api)
+
 ## Event Management Service
 
 ### Description
