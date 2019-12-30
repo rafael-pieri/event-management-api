@@ -6,10 +6,14 @@ It is an application for event management.
 ### ERD
 ![alt text](https://github.com/rafael-pieri/event-management-api/blob/master/erd.png)
 
-### How to run
-mvn package 
-java -jar target/event-management-api-0.0.1-SNAPSHOT.jar
-use docker compose
+### How to run the application
+Execute the following command to provide the database:
+
+`docker-compose up`
+
+Once the database is up and working, execute the command below:
+
+`mvn spring-boot:run`
 
 ### HAL Browser
 JSON Hypertext Application Language, or HAL, is a simple format that gives a consistent and easy way to hyperlink between resources in our API. Including HAL within our REST API makes it much more explorable to users as well as being essentially self-documenting.

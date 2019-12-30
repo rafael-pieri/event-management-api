@@ -14,9 +14,6 @@ services:
     image: boxfuse/flyway:5.2.4
     volumes:
       - ./src/main/resources/db/migration:/flyway/sql
-    command: -url=jdbc:mysql://mysql:3306/event_management?verifyServerCertificate=false&useSSL=true -schemas=event_management -user=root -password=root migrate
+    command: -url=jdbc:mysql://mysql:3306/event_management?verifyServerCertificate=false&useSSL=false -schemas=event_management -user=root -password=root -connectRetries=60 migrate
     depends_on:
       - mysql
-
-# docker-compose up -d mysql
-# docker-compose up flyway
