@@ -1,6 +1,6 @@
 package com.eventmanagement.repos;
 
-import com.eventmanagement.entities.Organizer;
+import com.eventmanagement.model.Organizer;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 

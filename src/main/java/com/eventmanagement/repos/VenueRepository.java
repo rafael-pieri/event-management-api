@@ -1,6 +1,6 @@
 package com.eventmanagement.repos;
 
-import com.eventmanagement.entities.Venue;
+import com.eventmanagement.model.Venue;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

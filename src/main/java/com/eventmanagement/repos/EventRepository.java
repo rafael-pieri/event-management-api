@@ -1,7 +1,7 @@
 package com.eventmanagement.repos;
 
-import com.eventmanagement.entities.Event;
-import com.eventmanagement.entities.projections.PartialEventProjection;
+import com.eventmanagement.model.Event;
+import com.eventmanagement.model.projections.PartialEventProjection;
 
 import java.time.ZoneId;
 

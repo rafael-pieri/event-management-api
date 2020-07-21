@@ -1,6 +1,6 @@
 package com.eventmanagement.controllers;
 
-import com.eventmanagement.entities.Event;
+import com.eventmanagement.model.Event;
 import com.eventmanagement.repos.EventRepository;
 
 import org.springframework.data.rest.webmvc.RepositoryRestController;

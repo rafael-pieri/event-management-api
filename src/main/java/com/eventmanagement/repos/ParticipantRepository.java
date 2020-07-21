@@ -1,6 +1,6 @@
 package com.eventmanagement.repos;
 
-import com.eventmanagement.entities.Participant;
+import com.eventmanagement.model.Participant;
 
 import java.util.Optional;
 

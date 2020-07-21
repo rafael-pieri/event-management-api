@@ -1,6 +1,6 @@
-package com.eventmanagement.entities.projections;
+package com.eventmanagement.model.projections;
 
-import com.eventmanagement.entities.Venue;
+import com.eventmanagement.model.Venue;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.rest.core.config.Projection;

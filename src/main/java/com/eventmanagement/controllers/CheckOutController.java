@@ -1,6 +1,6 @@
 package com.eventmanagement.controllers;
 
-import com.eventmanagement.entities.Participant;
+import com.eventmanagement.model.Participant;
 import com.eventmanagement.exceptions.NotCheckedInException;
 import com.eventmanagement.repos.ParticipantRepository;
 

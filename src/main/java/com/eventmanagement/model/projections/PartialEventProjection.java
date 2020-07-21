@@ -1,6 +1,6 @@
-package com.eventmanagement.entities.projections;
+package com.eventmanagement.model.projections;
 
-import com.eventmanagement.entities.Event;
+import com.eventmanagement.model.Event;
 
 import java.time.Instant;
 import java.time.ZonedDateTime;

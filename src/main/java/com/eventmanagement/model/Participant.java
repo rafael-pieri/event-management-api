@@ -1,4 +1,4 @@
-package com.eventmanagement.entities;
+package com.eventmanagement.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.time.Instant;
 import java.util.Objects;
 
@@ -22,26 +25,24 @@ import org.hibernate.annotations.CreationTimestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Venue {
+public class Participant {
 
     @Id
     @Column(nullable = false, updatable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(nullable = false)
     private String name;
 
-    private String streetAddress;
+    @Column(nullable = false)
+    private String email;
 
-    private String streetAddress2;
+    private Boolean checkedIn;
 
-    private String city;
-
-    private String state;
-
-    private String country;
-
-    private String postalCode;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(referencedColumnName = "ID", nullable = false, updatable = false)
+    private Event event;
 
     @JsonIgnore
     @CreationTimestamp
@@ -52,8 +53,8 @@ public class Venue {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Venue venue = (Venue) o;
-        return id.equals(venue.id);
+        Participant that = (Participant) o;
+        return id.equals(that.id);
     }
 
     @Override

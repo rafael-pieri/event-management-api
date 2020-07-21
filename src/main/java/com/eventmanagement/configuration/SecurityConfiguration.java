@@ -1,4 +1,4 @@
-package com.eventmanagement.config;
+package com.eventmanagement.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
