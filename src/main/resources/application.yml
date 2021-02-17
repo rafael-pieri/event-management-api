@@ -1,6 +1,6 @@
 spring.datasource:
   name: event-management
-  url: jdbc:mysql://localhost:3306/event_management
+  url: jdbc:mysql://localhost:3306/event_management?useSSL=false
   username: root
   password: root
   jpa:
